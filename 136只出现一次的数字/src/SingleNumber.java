@@ -19,8 +19,10 @@ public class SingleNumber {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] nums = {4,1,2,1,2};
+		int[] nums1 = {4,1,2,1};
 		System.out.println(singleNumber(nums));
-		System.out.println(1^3);
+		System.out.println(singleNumber(nums1));
+		System.out.println(singleNumber(nums)^singleNumber(nums1));
 	}
 	public static int singleNumber(int[] nums) {
 		int single = 0;
