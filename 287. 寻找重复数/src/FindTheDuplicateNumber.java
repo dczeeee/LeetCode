@@ -28,7 +28,7 @@ public class FindTheDuplicateNumber {
 	public static int findDuplicate(int[] nums) {
 		// 一次遍历，假设当前数字为i，那么就把nums[i]的数字变为负数，当访问的索引对应数字为负数时，则为重复数字
 		for(int i = 0 ; i< nums.length ; i++){
-            int index = Math.abs(nums[i]);
+            int index = Math.abs(nums[i]) - 1;
             if(nums[index] < 0){
                 return Math.abs(nums[i]);
             }else
